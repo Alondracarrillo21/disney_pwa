@@ -1,0 +1,175 @@
+body {
+    background-color: #f0f8ff; /* Light pastel blue */
+    color: #333; /* Darker text color for better readability */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #ff6f91; /* Pastel pink */
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #ff6f91; /* Pastel pink button */
+    border-color: #ff6f91;
+}
+
+.btn-success:hover {
+    background-color: #ff4f71; /* Darker pink on hover */
+}
+
+.modal-content {
+    border-radius: 10px;
+    background: #ffffff; /* White background for modals */
+}
+
+.modal-header {
+    background-color: #ff6f91; /* Pastel pink */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer .btn {
+    border-radius: 5px;
+}
+
+.modal-body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.form-control {
+    border: 1px solid #ff6f91; /* Pastel pink border */
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #ff4f71; /* Darker pink on focus */
+    box-shadow: 0 0 5px rgba(255, 111, 145, 0.5);
+}
+
+.btn-primary {
+    background-color: #add8e6; /* Pastel blue */
+    border-color: #add8e6;
+}
+
+.btn-primary:hover {
+    background-color: #87cefa; /* Darker pastel blue on hover */
+}
+
+.btn-danger {
+    background-color: #ff6f91; /* Pastel pink for delete button */
+    border-color: #ff6f91;
+}
+
+.btn-danger:hover {
+    background-color: #ff4f71; /* Darker pink on hover */
+}
+
+#characters {
+    margin-top: 20px;
+}
+
+  h1 {
+     font-family: 'Lobster', cursive; /* Aplicar la fuente al título */
+     font-size: 2.5rem; /* Tamaño del texto */
+ }
+
+
+ 
+
+.container {
+
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+
+}
+
+.container {
+
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+
+}
+
+
+footer {
+
+    background-image: url('imgs/footer-background.jpg'); /* Cambia la ruta según sea necesario */
+
+    background-size: cover; /* Asegura que la imagen cubra todo el footer */
+
+    background-position: center; /* Centra la imagen */
+
+    color: #fff; /* Cambia el color del texto a blanco para mejor visibilidad */
+
+}
+
+
+
+
+body {
+    background: url('img/castillo.jpg') no-repeat center center fixed; /* Cambia la ruta según sea necesario */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    color: #0e0c0d;
+    font-family: 'Lobster', cursive;
+    min-height: 100vh; /* Asegura que el footer esté al final de la página */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+}
+
+footer {
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    color: #000; /* Cambia el color del texto a negro */
+    padding: 20px 0; /* Espaciado adicional */
+    position: relative; /* Para el uso de la imagen de fondo */
+}
+
+footer img {
+    max-width: 100px; /* Asegura que la imagen no exceda este tamaño */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.text-center {
+    text-align: center; /* Centra el texto */
+}
+.container {
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+}
+
+footer {
+
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+
+    color: #000; /* Cambia el color del texto a negro */
+
+    padding: 20px 0; /* Espaciado adicional */
+
+    position: relative; /* Para el uso de la imagen de fondo */
+
+}
+
+
+.footer-image {
+
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+
+    height: auto; /* Mantiene la proporción de la imagen */
+
+    max-width: 2000px; /* Limita el tamaño máximo de la imagen */
+
+    margin-bottom: 10px; /* Espaciado inferior */
+
+}
+
+
+.text-center {
+
+    text-align: center; /* Centra el texto */
+
+}

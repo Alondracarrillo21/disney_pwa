@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgs/icon512_maskable.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Películas de Disney</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h1>Películas de Disney</h1>
+            <img src="/disney/img/logo.png" alt="Imagen de Disney" class="img-fluid" style="max-width: 150px;">
+        </div>
+
+        <div class="search-container d-flex justify-content-between mb-3">
+            <input type="text" class="form-control w-75" placeholder="Buscar película..." id="searchInput">
+            <button type="button" class="btn btn-primary ml-2" id="searchBtn">Buscar</button>
+            <button type="button" class="btn btn-success ml-2" id="addCharacterBtn" data-toggle="modal" data-target="#characterModal">Agregar Película</button>
+        </div>
+
+        <div id="characters" class="row mb-4"></div>
+
+        <!-- Modal para agregar película -->
+        <div class="modal fade" id="characterModal" tabindex="-1" role="dialog" aria-labelledby="characterModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="characterModalLabel">Agregar Película</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="character-form" enctype="multipart/form-data" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birthDate">Fecha de estreno</label>
+                                <input type="date" class="form-control" id="birthDate" name="release_date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="img">Imagen</label>
+                                <input type="file" class="form-control-file" id="img" name="image" accept="image/*" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de confirmación de eliminación -->
+        <div class="modal fade" id="deleteConfirmModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteConfirmModalLabel">Confirmar Eliminación</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Estás seguro de que deseas eliminar esta película?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" id="confirm-delete-btn">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Actualizar Película -->
+<div class="modal fade" id="updateCharacterModal" tabindex="-1" role="dialog" aria-labelledby="updateCharacterModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateCharacterModalLabel">Actualizar Película</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="updateCharacterForm">
+                    <div class="form-group">
+                        <label for="updateCharacterName">Nombre</label>
+                        <input type="text" class="form-control" id="updateCharacterName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateCharacterBirthDate">Fecha de Estreno</label>
+                        <input type="date" class="form-control" id="updateCharacterBirthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateCharacterImg">Imagen</label>
+                        <input type="file" class="form-control-file" id="updateCharacterImg">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <footer class="bg-light text-center text-lg-start mt-5">
+            <div class="text-center p-3">
+                <img src="/disney/img/fotter.jpeg" alt="Disney" class="footer-image"> 
+                <div>© 2024 Disney Movies:</div>
+                <a class="text-dark" href="#">Términos de servicio</a>
+                |
+                <a class="text-dark" href="#">Política de privacidad</a>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/disney/js/app.js"></script>
+    </body>
+</html>

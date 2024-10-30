@@ -1,0 +1,29 @@
+{
+  "name": "Películas de Disney",
+  "short_name": "Disney Movies",
+  "description": "Explora y busca tus películas favoritas de Disney.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/disney/img/mickey.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/disney/img/mickey.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/disney/img/mickey.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "scope": "/"
+}
